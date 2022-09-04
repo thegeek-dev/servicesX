@@ -1,0 +1,68 @@
+Positioned(
+              left: 0,
+              right: 0,
+              bottom: 15,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Container(
+                    padding: EdgeInsets.symmetric(horizontal: 15),
+                    height: 50,
+                    width: size.width * 0.5,
+                    decoration: BoxDecoration(
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.grey.withOpacity(0.5),
+                          spreadRadius: 2,
+                          blurRadius: 2,
+                          offset: Offset(0, 3),
+                        )
+                      ],
+                      color: MAIN_ACCENT,
+                      borderRadius: BorderRadius.circular(30),
+                    ),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Material(
+                          elevation: 30,
+                          color: Colors.transparent,
+                          child: IconButton(
+                              tooltip: "Upload",
+                              onPressed: () {},
+                              icon: Icon(
+                                Icons.upload,
+                                color: MAIN_COLOR,
+                                size: 27,
+                              )),
+                        ),
+                        Material(
+                          color: Colors.transparent,
+                          elevation: 30,
+                          child: IconButton(
+                              tooltip: "Go Live",
+                              onPressed: () {},
+                              icon: Icon(
+                                Mdi.satelliteUplink,
+                                size: 32,
+                                color: MAIN_COLOR,
+                              )),
+                        ),
+                        Material(
+                          color: Colors.transparent,
+                          elevation: 30,
+                          child: IconButton(
+                              tooltip: "Compose",
+                              onPressed: () {},
+                              icon: Icon(
+                                Icons.edit,
+                                size: 27,
+                                color: MAIN_COLOR,
+                              )),
+                        ),
+                      ],
+                    ),
+                  )
+                ],
+              ),
+            )
